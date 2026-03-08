@@ -4,6 +4,7 @@ description: >
   Invoke various LLMs (Claude, GPT-4, Gemini, DeepSeek, Llama, etc.) via OpenRouter API 
   to save main agent tokens and leverage specialized model capabilities. 
   Supports 24+ free models with no payment required.
+user-invocable: true
 ---
 
 # OpenRouter Skill for OpenClaw
