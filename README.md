@@ -4,8 +4,8 @@
 
 ## Features
 
-- Support for 20+ popular models (Claude, GPT-4, Gemini, DeepSeek, etc.)
-- Free models available
+- **24+ Free Models** - No payment required!
+- **20+ Paid Models** - Claude, GPT-4o, Gemini, etc.
 - Simple command-line interface
 - Compatible with NIM skill style
 
@@ -32,12 +32,24 @@ cp -r openclaw-openrouter-skill/* ~/.nvm/versions/node/v24.14.0/lib/node_modules
 python3 scripts/openrouter_call.py list
 
 # Call a model
-python3 scripts/openrouter_call.py claude "Hello!"
-python3 scripts/openrouter_call.py gpt4o "Write a poem"
-python3 scripts/openrouter_call.py deepseek "Explain quantum computing"
+python3 scripts/openrouter_call.py llama-free "Hello!"
+python3 scripts/openrouter_call.py qwen3-coder-free "Write a Python function"
+python3 scripts/openrouter_call.py gemma-27b-free "Explain quantum computing"
 ```
 
-## Supported Models
+## 🆓 Free Models (No Payment Required!)
+
+| Alias | Model |
+|-------|-------|
+| `llama-free` | Meta Llama 3.3 70B |
+| `qwen3-coder-free` | Qwen3 Coder 480B |
+| `gemma-27b-free` | Google Gemma 3 27B |
+| `mistral-24b-free` | Mistral Small 3.1 24B |
+| `nemotron-9b-free` | NVIDIA Nemotron Nano 9B |
+| `glm-free` | GLM 4.5 Air |
+| `hermes-405b-free` | Nous Hermes 3 405B |
+
+## 💰 Paid Models
 
 | Alias | Model |
 |-------|-------|
@@ -45,10 +57,11 @@ python3 scripts/openrouter_call.py deepseek "Explain quantum computing"
 | `gpt4o` | GPT-4o |
 | `gemini` | Gemini Pro 1.5 |
 | `deepseek` | DeepSeek Chat |
-| `llama` | Llama 3.1 70B |
-| `qwq` | QwQ 32B |
 
-Free models: `llama-free`, `gemini-free`, `deepseek-free`
+## Tips
+
+- Free models may have rate limits
+- Use full model ID if alias not available: `meta-llama/llama-3.3-70b-instruct:free`
 
 ## License
 
